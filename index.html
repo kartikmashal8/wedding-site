@@ -1224,7 +1224,7 @@
 			/* Caption */
 			.slide-caption {
 				position: absolute;
-				bottom: 2.8rem;
+				bottom: 2.25rem;
 				left: 0;
 				right: 0;
 				text-align: center;
@@ -1297,7 +1297,7 @@
 			/* Dots */
 			.slider-dots {
 				position: absolute;
-				bottom: 1.1rem;
+				bottom: 1.5rem;
 				left: 0;
 				right: 0;
 				display: flex;
@@ -1709,6 +1709,28 @@
 				color: var(--gold-light);
 				text-transform: uppercase;
 			}
+			.slider-btn svg {
+			width: 18px;
+			height: 18px;
+			}
+			.slider-btn {
+			width: 44px;
+			height: 44px;
+			border-radius: 50%;
+			border: 1px solid rgba(200, 151, 62, 0.4);
+			background: rgba(255, 255, 255, 0.05);
+			color: var(--gold);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			transition: all 0.3s ease;
+			}
+
+			.slider-btn:hover {
+			background: rgba(200, 151, 62, 0.15);
+			border-color: var(--gold);
+			}
 		</style>
 	</head>
 
@@ -1916,7 +1938,11 @@
 						<!-- Elegant play overlay -->
 						<div class="video-overlay" id="videoOverlay">
 							<div class="vo-inner">
-								<div class="vo-play-btn">&#9654;</div>
+								<div class="vo-play-btn">
+								<svg viewBox="0 0 24 24" fill="currentColor">
+									<path d="M8 5v14l11-7z"></path>
+								</svg>
+								</div>
 								<p class="vo-text">Play with Sound</p>
 							</div>
 						</div>
@@ -1928,7 +1954,6 @@
 						<span class="vc-label">Shubham &amp; Shweta </br> · May 2026 · </span>
 						<div class="vc-vol-wrap">
 							<button class="vc-btn" id="vcMute" title="Mute / Unmute">&#128266;</button>
-							<input type="range" class="vc-vol-slider" id="vcVol" min="0" max="100" value="80" />
 						</div>
 					</div>
 				</div>
@@ -2102,83 +2127,179 @@
 
 			<div class="slider-stage" id="sliderStage">
 				<div class="slide active">
+					<img class="slide-img" src="assets/images/photo13.jpg" alt="Photo 1" />
+					<div class="slide-vignette"></div>
+					<div class="slide-frame"></div>
+					<div class="slide-caption">
+						<p class="slide-caption-text">A love that feels like home</p>
+						<p class="slide-caption-sub">Shubham &amp; Shweta</p>
+					</div>
+					</div>
+					<div class="slide">
+					<img class="slide-img" src="assets/images/photo11.jpg" alt="Photo 1" />
+					<div class="slide-vignette"></div>
+					<div class="slide-frame"></div>
+					<div class="slide-caption">
+						<p class="slide-caption-text">Where two souls become one</p>
+						<p class="slide-caption-sub">A journey of forever</p>
+					</div>
+					</div>
+					<div class="slide">
+					<img class="slide-img" src="assets/images/photo15.jpg" alt="Photo 1" />
+					<div class="slide-vignette"></div>
+					<div class="slide-frame"></div>
+					<div class="slide-caption">
+						<p class="slide-caption-text">Bound by love and destiny</p>
+						<p class="slide-caption-sub">Together in every lifetime</p>
+					</div>
+					</div>
+					<div class="slide">
+					<img class="slide-img" src="assets/images/photo7.jpg" alt="Photo 1" />
+					<div class="slide-vignette"></div>
+					<div class="slide-frame"></div>
+					<div class="slide-caption">
+						<p class="slide-caption-text">Moments that turn into memories</p>
+						<p class="slide-caption-sub">Captured with love</p>
+					</div>
+					</div>
+					<div class="slide">
+					<img class="slide-img" src="assets/images/photo8.jpg" alt="Photo 1" />
+					<div class="slide-vignette"></div>
+					<div class="slide-frame"></div>
+					<div class="slide-caption">
+						<p class="slide-caption-text">A bond that grows stronger</p>
+						<p class="slide-caption-sub">With every passing moment</p>
+					</div>
+					</div>
+					<div class="slide">
+					<img class="slide-img" src="assets/images/photo9.jpg" alt="Photo 1" />
+					<div class="slide-vignette"></div>
+					<div class="slide-frame"></div>
+					<div class="slide-caption">
+						<p class="slide-caption-text">Hand in hand, heart to heart</p>
+						<p class="slide-caption-sub">Forever starts now</p>
+					</div>
+					</div>
+					<div class="slide">
+					<img class="slide-img" src="assets/images/photo10.jpg" alt="Photo 1" />
+					<div class="slide-vignette"></div>
+					<div class="slide-frame"></div>
+					<div class="slide-caption">
+						<p class="slide-caption-text">Love written in every glance</p>
+						<p class="slide-caption-sub">A timeless connection</p>
+					</div>
+					</div>
+					<div class="slide">
 					<img class="slide-img" src="assets/images/photo12.jpg" alt="Photo 1" />
 					<div class="slide-vignette"></div>
 					<div class="slide-frame"></div>
 					<div class="slide-caption">
-						<p class="slide-caption-text">Together, always</p>
-						<p class="slide-caption-sub">Shubham &amp; Shweta</p>
+						<p class="slide-caption-text">Together is a beautiful place</p>
+						<p class="slide-caption-sub">Where we belong</p>
 					</div>
-				</div>
-				<div class="slide">
+					</div>
+					<div class="slide">
 					<img class="slide-img" src="assets/images/photo2.jpg" alt="Photo 2" />
 					<div class="slide-vignette"></div>
 					<div class="slide-frame"></div>
 					<div class="slide-caption">
-						<p class="slide-caption-text">A moment in time</p>
+						<p class="slide-caption-text">A moment sealed in time</p>
 						<p class="slide-caption-sub">May 2026 · Vijayapura</p>
 					</div>
-				</div>
-				<div class="slide">
+					</div>
+					<div class="slide">
 					<img class="slide-img" src="assets/images/photo3.jpg" alt="Photo 3" />
 					<div class="slide-vignette"></div>
 					<div class="slide-frame"></div>
 					<div class="slide-caption">
-						<p class="slide-caption-text">Two hearts, one destiny</p>
-						<p class="slide-caption-sub">Mashal &amp; Kadabgaon families</p>
+						<p class="slide-caption-text">Two families, one celebration</p>
+						<p class="slide-caption-sub">Mashal &amp; Kadabgaon</p>
 					</div>
-				</div>
-				<div class="slide">
+					</div>
+					<div class="slide">
 					<img class="slide-img" src="assets/images/photo4.jpg" alt="Photo 4" />
 					<div class="slide-vignette"></div>
 					<div class="slide-frame"></div>
 					<div class="slide-caption">
-						<p class="slide-caption-text">Every love story is beautiful</p>
-						<p class="slide-caption-sub">But ours is our favourite</p>
+						<p class="slide-caption-text">A story written in love</p>
+						<p class="slide-caption-sub">And cherished forever</p>
 					</div>
-				</div>
-				<div class="slide">
+					</div>
+					<div class="slide">
 					<img class="slide-img" src="assets/images/photo5.jpg" alt="Photo 5" />
 					<div class="slide-vignette"></div>
 					<div class="slide-frame"></div>
 					<div class="slide-caption">
-						<p class="slide-caption-text">Forever begins here</p>
+						<p class="slide-caption-text">The beginning of forever</p>
 						<p class="slide-caption-sub">6th May 2026</p>
 					</div>
-				</div>
-				<div class="slide">
+					</div>
+					<div class="slide">
 					<img class="slide-img" src="assets/images/photo6.jpg" alt="Photo 6" />
 					<div class="slide-vignette"></div>
 					<div class="slide-frame"></div>
 					<div class="slide-caption">
-						<p class="slide-caption-text">Blessed by grace &amp; love</p>
+						<p class="slide-caption-text">Blessed with love and grace</p>
 						<p class="slide-caption-sub">Shri Maheshwari Bhavan</p>
 					</div>
 				</div>
 
-				<button class="slider-btn prev" id="sliderPrev">&#8592;</button>
-				<button class="slider-btn next" id="sliderNext">&#8594;</button>
+				<!-- <button class="slider-btn prev" id="sliderPrev">&#8592;</button>
+				<button class="slider-btn next" id="sliderNext">&#8594;</button> -->
+
+				<button class="slider-btn prev" id="sliderPrev">
+			<svg viewBox="0 0 24 24" fill="none">
+				<path d="M15 6L9 12L15 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+			</button>
+
+			<button class="slider-btn next" id="sliderNext">
+			<svg viewBox="0 0 24 24" fill="none">
+				<path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			</svg>
+			</button>
 				<div class="slider-dots" id="sliderDots"></div>
 			</div>
 
 			<!-- Thumbnail strip -->
 			<div class="thumb-strip" id="thumbStrip">
 				<div class="s-thumb active" data-idx="0">
-					<img class="s-thumb-img" src="assets/images/photo12.jpg" alt="" />
+					<img class="s-thumb-img" src="assets/images/photo13.jpg" alt="" />
 				</div>
 				<div class="s-thumb" data-idx="1">
-					<img class="s-thumb-img" src="assets/images/photo2.jpg" alt="" />
+					<img class="s-thumb-img" src="assets/images/photo11.jpg" alt="" />
 				</div>
 				<div class="s-thumb" data-idx="2">
-					<img class="s-thumb-img" src="assets/images/photo3.jpg" alt="" />
+					<img class="s-thumb-img" src="assets/images/photo15.jpg" alt="" />
 				</div>
 				<div class="s-thumb" data-idx="3">
-					<img class="s-thumb-img" src="assets/images/photo4.jpg" alt="" />
+					<img class="s-thumb-img" src="assets/images/photo7.jpg" alt="" />
 				</div>
 				<div class="s-thumb" data-idx="4">
-					<img class="s-thumb-img" src="assets/images/photo5.jpg" alt="" />
+					<img class="s-thumb-img" src="assets/images/photo8.jpg" alt="" />
 				</div>
 				<div class="s-thumb" data-idx="5">
+					<img class="s-thumb-img" src="assets/images/photo9.jpg" alt="" />
+				</div>
+				<div class="s-thumb" data-idx="6">
+					<img class="s-thumb-img" src="assets/images/photo10.jpg" alt="" />
+				</div>
+				<div class="s-thumb" data-idx="7">
+					<img class="s-thumb-img" src="assets/images/photo12.jpg" alt="" />
+				</div>
+				<div class="s-thumb" data-idx="8">
+					<img class="s-thumb-img" src="assets/images/photo2.jpg" alt="" />
+				</div>
+				<div class="s-thumb" data-idx="9">
+					<img class="s-thumb-img" src="assets/images/photo3.jpg" alt="" />
+				</div>
+				<div class="s-thumb" data-idx="10">
+					<img class="s-thumb-img" src="assets/images/photo4.jpg" alt="" />
+				</div>
+				<div class="s-thumb" data-idx="11">
+					<img class="s-thumb-img" src="assets/images/photo5.jpg" alt="" />
+				</div>
+				<div class="s-thumb" data-idx="12">
 					<img class="s-thumb-img" src="assets/images/photo6.jpg" alt="" />
 				</div>
 			</div>
@@ -2594,36 +2715,15 @@
 					}
 					video.paused ? video.play() : video.pause();
 				});
-
-				// ── Mute button ──
-				// muteBtn.addEventListener('click', function () {
-				// 	video.muted = !video.muted;
-				// 	muteBtn.innerHTML = video.muted ? '&#128264;' : '&#128266;';
-				// 	if (!video.muted) video.volume = volSldr.value / 100;
-				// });
 				// ── Mute button ──
 				muteBtn.addEventListener('click', function () {
 					video.muted = !video.muted;
 
 					if (!video.muted) {
-						video.volume = 0.4; // ✅ Always set to 40% on unmute
-						volSldr.value = 40; // ✅ Sync slider
+						video.volume = 0.4; // ✅ Always set to 40% on unmute// ✅ Sync slider
 					}
 
-					muteBtn.innerHTML = video.muted ? '&#128264;' : '&#128266;';
-				});
-
-				// ── Volume slider ──
-				volSldr.addEventListener('input', function () {
-					video.volume = this.value / 100;
-					video.muted = this.value == 0;
-					muteBtn.innerHTML = video.muted ? '&#128264;' : '&#128266;';
-				});
-
-				// ── Sync slider ──
-				video.addEventListener('volumechange', function () {
-					volSldr.value = video.muted ? 0 : Math.round(video.volume * 100);
-					muteBtn.innerHTML = video.muted ? '&#128264;' : '&#128266;';
+					muteBtn.innerHTML = video.muted ? '🔇' :  '🔊';
 				});
 			})();
 		</script>
